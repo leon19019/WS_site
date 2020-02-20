@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<title>Зимняя школа в Силаэдре</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<style>
+hr {
+    border: none;
+    background-color: black;
+    color: black;
+    height: 2px;
+   }
+</style>
+<body>
+<hr>
+<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="w3_open()" >Основная страница</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="w3_close()">Регистрация</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Фотки</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Контакты</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Активность</a>
+<hr>
+
+<div id="007" class="w3-container">
+    <p>123</p>
+</div>
+
+<div id="003" class="w3-container">
+    <p>321</p>
+</div>
+<script>
+function w3_open() {
+  document.getElementById("007").style.display = "block";
+  document.getElementById("003").style.display = "none";
+}
+
+function w3_close() {
+  document.getElementById("007").style.display = "none";
+  document.getElementById("003").style.display = "block";
+}
+</script>
+</body>
+</html>
