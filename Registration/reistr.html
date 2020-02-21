@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <style>
 hr {
@@ -67,8 +66,8 @@ body, html {
     <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenReg()" >Регистрация</a>
     <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenPhotos()" >Фотки</a>
     <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenActivity()" >Активность</a>
-    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenContact()" >Контакты</a>
-    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenHistory()" >История</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenContact()" >История</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenHistory()" >Контакты</a>
 <hr>
 <div id="regPage" class="w3-container" style="display:none">
 <div id="id02" class="w3-container">
@@ -107,6 +106,16 @@ body, html {
   </div>
 </div>
 </div>
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-vk w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.1303fm.org" title="Силаэдр" target="_blank" class="w3-hover-text-dark-gray">Силаэдр</a></p>
+</footer>
 </div>
 </div>
 <div id="mainPage" class="w3-container">
@@ -251,9 +260,20 @@ body, html {
 
   </div>
 </div>
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-vk w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.1303fm.org" title="Силаэдр" target="_blank" class="w3-hover-text-dark-gray">Силаэдр</a></p>
+</footer>
 </div>
+
 <div id="activityPage" class="w3-container" style=display:none>
-    <div class="w3-container w3-white">
+<div class="w3-container w3-white">
 <h1 style='font-size:60px'; align = middle >Активности</h1>
 </div>
 
@@ -287,6 +307,7 @@ body, html {
 
 </div>
 </div>
+</div>
 
 
 
@@ -305,7 +326,7 @@ body, html {
     <p style="color:#777;">
       Lorem ipsum
     </p>
-    <button onclick="document.getElementById('id01').style.display='none'"
+    <button onclick="document.getElementById('id05').style.display='none'"
         type="button" class="w3-button w3-red">Cancel</button>
     </div>
     </div>
@@ -315,9 +336,7 @@ body, html {
     </p>
 </div>
 </div>
-
-
-
+</div>
 
 <div class="w3-row w3-white">
 <hr>
@@ -334,7 +353,7 @@ body, html {
     <p style="color:#777;">
       Lorem ipsum
     </p>
-    <button onclick="document.getElementById('id01').style.display='none'"
+    <button onclick="document.getElementById('id06').style.display='none'"
         type="button" class="w3-button w3-red">Cancel</button>
     </div>
     </div>
@@ -342,6 +361,7 @@ body, html {
     <p style="color:#777;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
+</div>
 </div>
 </div>
 
@@ -360,7 +380,7 @@ body, html {
         <p style="color:#777;">
           Lorem ipsum
         </p>
-        <button onclick="document.getElementById('id01').style.display='none'"
+        <button onclick="document.getElementById('id07').style.display='none'"
         type="button" class="w3-button w3-red">Cancel</button>
         </div>
         </div>
@@ -370,6 +390,7 @@ body, html {
         </p>
     </div>
     </div>
+</div>
 
 
     <div class="w3-row w3-white">
@@ -381,13 +402,13 @@ body, html {
 
         <div class="w3-twothird w3-container">
         <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
-            <button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-white w3-large">Lorem ipsum</button>
-            <div id="id09" class="w3-modal">
+            <button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-white w3-large">Lorem ipsum</button>
+            <div id="id08" class="w3-modal">
             <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px">
             <p style="color:#777;">
               Lorem ipsum
             </p>
-            <button onclick="document.getElementById('id01').style.display='none'"
+            <button onclick="document.getElementById('id08').style.display='none'"
             type="button" class="w3-button w3-red">Cancel</button>
             </div>
             </div>
@@ -397,6 +418,7 @@ body, html {
             </p>
         </div>
         </div>
+    </div>
 
 
 <div class="w3-row w3-white">
@@ -408,13 +430,13 @@ body, html {
 
 <div class="w3-twothird w3-container">
 <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
-    <button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-white w3-large">Lorem ipsum</button>
-    <div id="id08" class="w3-modal">
+    <button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-white w3-large">Lorem ipsum</button>
+    <div id="id09" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px">
     <p style="color:#777;">
       Lorem ipsum
     </p>
-    <button onclick="document.getElementById('id01').style.display='none'"
+    <button onclick="document.getElementById('id09').style.display='none'"
         type="button" class="w3-button w3-red">Cancel</button>
     </div>
     </div>
@@ -426,14 +448,19 @@ body, html {
 </div>
 </div>
 </div>
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-vk w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.1303fm.org" title="Силаэдр" target="_blank" class="w3-hover-text-dark-gray">Силаэдр</a></p>
+</footer>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="historyPage" class="w3-container" style=display:none>
-    <div class="w3-container w3-teal">
+<div id="contactPage" class="w3-container" style=display:none>
+<div class="w3-container w3-teal">
 <h1>Другие зимние школы</h1>
 </div>
 
@@ -466,6 +493,19 @@ body, html {
 </div>
 </div>
 </div>
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-vk w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.1303fm.org" title="Силаэдр" target="_blank" class="w3-hover-text-dark-gray">Силаэдр</a></p>
+</footer>
+</div>
+<div id="historyPage" class="w3-container" style=display:none>
+
 </div>
 <script>
 function w3_OpenMainPage() {
