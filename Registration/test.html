@@ -16,30 +16,93 @@ hr {
 <body>
 <hr>
 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="w3_open()" >Основная страница</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="w3_close()">Регистрация</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Фотки</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Контакты</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Активность</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenMainPage()" >Основная страница</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenReg()" >Регистрация</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenPhotos()" >Фотки</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenActivity()" >Активность</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenContact()" >Контакты</a>
+    <a class="w3-bar-item w3-button w3-padding-large" onclick="w3_OpenHistory()" >История</a>
 <hr>
 
-<div id="007" class="w3-container">
+<div id="mainPage" class="w3-container">
     <p>123</p>
 </div>
 
-<div id="003" class="w3-container">
-    <p>321</p>
+<div id="regPage" class="w3-container" style=display:none>
+    <p>234</p>
 </div>
+
+<div id="photosPage" class="w3-container" style=display:none>
+    <p>345</p>
+</div>
+
+<div id="activityPage" class="w3-container" style=display:none>
+    <p>456</p>
+</div>
+
+<div id="contactPage" class="w3-container" style=display:none>
+    <p>567</p>
+</div>
+
+<div id="historyPage" class="w3-container" style=display:none>
+    <p>678</p>
+</div>
+
 <script>
-function w3_open() {
-  document.getElementById("007").style.display = "block";
-  document.getElementById("003").style.display = "none";
+function w3_OpenMainPage() {
+  document.getElementById("mainPage").style.display = "block";
+  document.getElementById("regPage").style.display = "none";
+  document.getElementById("photosPage").style.display = "none";
+  document.getElementById("activityPage").style.display = "none";
+  document.getElementById("contactPage").style.display = "none";
+  document.getElementById("historyPage").style.display = "none";
 }
 
-function w3_close() {
-  document.getElementById("007").style.display = "none";
-  document.getElementById("003").style.display = "block";
+function w3_OpenReg() {
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("regPage").style.display = "block";
+  document.getElementById("photosPage").style.display = "none";
+  document.getElementById("activityPage").style.display = "none";
+  document.getElementById("contactPage").style.display = "none";
+  document.getElementById("historyPage").style.display = "none";
 }
+
+function w3_OpenPhotos() {
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("regPage").style.display = "none";
+  document.getElementById("photosPage").style.display = "block";
+  document.getElementById("activityPage").style.display = "none";
+  document.getElementById("contactPage").style.display = "none";
+  document.getElementById("historyPage").style.display = "none";
+}
+
+function w3_OpenActivity() {
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("regPage").style.display = "none";
+  document.getElementById("photosPage").style.display = "none";
+  document.getElementById("activityPage").style.display = "block";
+  document.getElementById("contactPage").style.display = "none";
+  document.getElementById("historyPage").style.display = "none";
+}
+
+function w3_OpenContact() {
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("regPage").style.display = "none";
+  document.getElementById("photosPage").style.display = "none";
+  document.getElementById("activityPage").style.display = "none";
+  document.getElementById("contactPage").style.display = "block";
+  document.getElementById("historyPage").style.display = "none";
+}
+
+function w3_OpenHistory() {
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("regPage").style.display = "none";
+  document.getElementById("photosPage").style.display = "none";
+  document.getElementById("activityPage").style.display = "none";
+  document.getElementById("contactPage").style.display = "none";
+  document.getElementById("historyPage").style.display = "block";
+}
+
 </script>
 </body>
 </html>
